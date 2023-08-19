@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def search(query):
-    search_url = f"https://www.search.brave.com/search?q={query}"
+    search_url = f"https://search.brave.com/search?q={query}"
     response = requests.get(search_url)
     
     if response.status_code == 200:
